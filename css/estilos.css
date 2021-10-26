@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 
 body {
@@ -174,6 +170,10 @@ nav {
 .about-us {
     
     background-image: url();
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
 }
 
 .contenedor-articulo {
@@ -616,3 +616,42 @@ btn-mas:checked ~ .btn-mas .icon-mas2{
     transform: rotate(137deg);
     font-size: 25px;
 }
+
+/*seccion bienvenidos */
+
+     /* Bienvenidos*/
+     .section-1 {
+        padding: 5vmin 0vmin;
+   
+       overflow: hidden;
+       width: 90%;
+       max-width: 1000px;
+       margin: auto;
+       overflow: hidden;
+       padding: 60px 0;
+    }
+    .section-1 .row .col-md-6 .imagen img {
+        opacity: 0.5;
+        width: 100%;
+        border-radius: 0.2em;
+    }
+    .section-1 .row .col-md-6:last-child {
+        position: relative;
+    }
+    .section-1 .row .col-md-6 .panel {
+        position: absolute;
+        top: 4vmin;
+        left: -7vmin;
+        bottom: 4vmin;
+        background: #e8a0a0;
+        border-radius: 3px;
+        text-align: left;
+        padding: 10vmin 5vmin 20vmin 10vmin;
+        box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .section-1 .row .col-md-6 .panel p {
+        font-weight: bolder;
+        font-size: 0.9em;
+        color: #2C492F;
+    }
