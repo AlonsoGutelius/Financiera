@@ -53,7 +53,7 @@
                 y practicas,todo ello fue elaborado por el grupo B , conformado
                 por los integrantes: Fabio Marroquin leon, Giancarlo jose
                 fernandez zaga,Alonso Miguel Gutelius Morales,Giannina yerimar
-                caycho yancce, Estefany brigitte calatayud rios y bryan nicanor
+                caycho yancce, Estefany brigitte calatayud rios y Bryan Nicanor
                 ojeda.
               </p>
             </div>
@@ -146,42 +146,43 @@
       </div>
 
       <div class="contenedor1">
-        <h1>Ratios de Liquidez</h1>
+        <h1>Ratios de endeudamiento y Solvencia</h1>
         <div class="contenedor-articulo">
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
-            <h3>Liquidez General</h3>
-            Activo Corriente: <input type="text" id="Ac" /><br />
-            Pasivo Corriente: <input type="text" id="Pc" /><br />
-            Liquidez General: <input type="text" id="LG" /><br />
+            <h3>Ratio de Endeudamiento</h3>
+            Pasivo: <input type="text" id="pas" /><br />
+            Patrimonio Neto: <input type="text" id="paNeto" /><br />
+            Ratio de Endeudamiento: <input type="text" id="RE" /><br />
             <input
               type="button"
               value="CALCULAR"
-              onclick="LiquidezGeneral()"
+              onclick="RatioEndeudamiento()"
             /><br />
           </div>
 
           <div class="articulo" data-aos="zoom-in-right">
             <img style="height: 230px" src="img/laboratorio.png" alt="" />
-            <h3 style="margin-left: 40px">Prueba Acida</h3>
-            Activo Corriente: <input type="text" id="AC" /><br />
-            Inventario: <input type="text" id="IN" /><br />
-            Pasivo Corriente: <input type="text" id="PC" /><br />
-            Prueba Ácida: <input type="text" id="PruebaA" /><br />
+            <h3 style="margin-left: 40px">En el corto Plazo</h3>
+            <h4 style="margin-left: 40px">Ratio de Endeudamiento</h4>
+            Pasivo Corriente: <input type="text" id="pasCo" /><br />
+            Patrimonio Neto: <input type="text" id="paneTo" /><br />
+            Ratio de Endeudamiento: <input type="text" id="REC" /><br />
             <input
               type="button"
               value="CALCULAR"
-              onclick="pruebaAcida()"
+              onclick="RatioEndeudamientoCortoPlazo()"
             /><br />
           </div>
 
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
-            <h3 style="margin-left: 50px">Capital de Trabajo</h3>
-            Activo Corriente: <input type="text" id="Atc" /><br />
-            Pasivo Corriente: <input type="text" id="PasC" /><br />
-            Capital de Trabajo: <input type="text" id="CT" /><br />
-            <input type="button" value="CALCULAR" onclick="CapitalTrabajo()" />
+            <h3 style="margin-left: 50px">En el Largo Plazo</h3>
+            <h4 style="margin-left: 40px">Ratio de Endeudamiento</h4>
+            Pasivo No Corriente: <input type="text" id="pasNoCo" /><br />
+            Patrimonio Neto: <input type="text" id="paneto" /><br />
+            Ratio de Endeudamiento: <input type="text" id="REL" /><br />
+            <input type="button" value="CALCULAR" onclick="RatioEndeudamientoLargoPlazo()" />
           </div>
         </div>
       </div>
