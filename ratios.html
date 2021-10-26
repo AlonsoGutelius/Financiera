@@ -5,8 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RATIOS FINANCIEROS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
+
+
+    <header>
+
+    </header>
+    <section class="about-us">
+        <div class="contenedor1">
+           
+            <div class="contenedor-articulo">
+                <img src="img/images.jpg" alt="">
+                
+            </div>
+            <h1>Ratios de Liquidez</h1>
+            <div class="contenedor-articulo">
+                <div class="articulo" data-aos="zoom-in-right" >
+                    <img src="" alt="">
+                    <h3>Liquidez General</h3>
+                    Activo Corriente: <input type="text" id="Ac"><br>
+                    Pasivo Corriente: <input type="text" id="Pc"><br>
+                    Liquidez General: <input type="text" id="LG"><br>
+                    <input type="button" value="CALCULAR" onclick="LiquidezGeneral()"><br>
+                </div>
+
+                <div class="articulo" data-aos="zoom-in-right">
+                    <img  src="" alt="">
+                    <h3 style="margin-left: 40px;"> Prueba Acida</h3>
+                    Activo Corriente: <input type="text" id="AC"><br>
+                    Inventario: <input type="text" id="IN"><br>
+                    Pasivo Corriente: <input type="text" id="PC"><br>
+                    Prueba Ácida: <input type="text" id="PruebaA"><br>
+                    <input type="button" value="CALCULAR" onclick="pruebaAcida()"><br>
+                </div>
+
+                <div class="articulo" data-aos="zoom-in-right">
+                   <img src="" alt="">
+                    <h3 style="margin-left: 50px;">Capital de Trabajo</h3>
+                    Activo Corriente: <input type="text" id="Atc"><br>
+                    Pasivo Corriente: <input type="text" id="PasC"><br>
+                    Capital de Trabajo: <input type="text" id="CT"><br>
+                    <input type="button" value="CALCULAR" onclick="CapitalTrabajo()">
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor1">
+           
+            <h1>Ratios de Liquidez</h1>
+            <div class="contenedor-articulo">
+                <div class="articulo" data-aos="zoom-in-right" >
+                    <img src="" alt="">
+                    <h3>Liquidez General</h3>
+                    Activo Corriente: <input type="text" id="Ac"><br>
+                    Pasivo Corriente: <input type="text" id="Pc"><br>
+                    Liquidez General: <input type="text" id="LG"><br>
+                    <input type="button" value="CALCULAR" onclick="LiquidezGeneral()"><br>
+                </div>
+
+                <div class="articulo" data-aos="zoom-in-right">
+                    <img style="height: 230px;" src="img/laboratorio.png" alt="">
+                    <h3 style="margin-left: 40px;"> Prueba Acida</h3>
+                    Activo Corriente: <input type="text" id="AC"><br>
+                    Inventario: <input type="text" id="IN"><br>
+                    Pasivo Corriente: <input type="text" id="PC"><br>
+                    Prueba Ácida: <input type="text" id="PruebaA"><br>
+                    <input type="button" value="CALCULAR" onclick="pruebaAcida()"><br>
+                </div>
+
+                <div class="articulo" data-aos="zoom-in-right">
+                   <img src="" alt="">
+                    <h3 style="margin-left: 50px;">Capital de Trabajo</h3>
+                    Activo Corriente: <input type="text" id="Atc"><br>
+                    Pasivo Corriente: <input type="text" id="PasC"><br>
+                    Capital de Trabajo: <input type="text" id="CT"><br>
+                    <input type="button" value="CALCULAR" onclick="CapitalTrabajo()">
+                </div>
+            </div>
+        </div>
+
+
+         
+    </section>
     <h1>Ratios de Liquidez</h1>
         <h2>Liquidez General</h2>
             Activo Corriente: <input type="text" id="Ac"><br>
@@ -99,5 +184,8 @@
 
 
     <script type="text/javascript" src="js/ratio.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
