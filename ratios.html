@@ -28,28 +28,28 @@
                 <div class="articulo" data-aos="zoom-in-right" >
                     <img src="" alt="">
                     <h3>Liquidez General</h3>
-                    Activo Corriente: <input type="text" id="Ac"><br>
-                    Pasivo Corriente: <input type="text" id="Pc"><br>
-                    Liquidez General: <input type="text" id="LG"><br>
+                    Activo Corriente: <input type="text" id="Ac" style="width: 100%;"><br>
+                    Pasivo Corriente: <input type="text" id="Pc" style="width: 100%;"><br>
+                    Liquidez General: <input type="text" id="LG" style="width: 100%;"><br>
                     <input type="button" value="CALCULAR" onclick="LiquidezGeneral()"><br>
                 </div>
 
                 <div class="articulo" data-aos="zoom-in-right">
                     <img  src="" alt="">
                     <h3 style="margin-left: 40px;"> Prueba Acida</h3>
-                    Activo Corriente: <input type="text" id="AC"><br>
-                    Inventario: <input type="text" id="IN"><br>
-                    Pasivo Corriente: <input type="text" id="PC"><br>
-                    Prueba Ácida: <input type="text" id="PruebaA"><br>
+                    Activo Corriente: <input type="text" id="AC" style="width: 100%;"><br>
+                    Inventario: <input type="text" id="IN" style="width: 100%;"><br>
+                    Pasivo Corriente: <input type="text" id="PC" style="width: 100%;"><br>
+                    Prueba Ácida: <input type="text" id="PruebaA" style="width: 100%;"><br>
                     <input type="button" value="CALCULAR" onclick="pruebaAcida()"><br>
                 </div>
 
                 <div class="articulo" data-aos="zoom-in-right">
                    <img src="" alt="">
-                    <h3 style="margin-left: 50px;">Capital de Trabajo</h3>
-                    Activo Corriente: <input type="text" id="Atc"><br>
-                    Pasivo Corriente: <input type="text" id="PasC"><br>
-                    Capital de Trabajo: <input type="text" id="CT"><br>
+                    <h3>Capital de Trabajo</h3>
+                    Activo Corriente: <input type="text" id="Atc" style="width: 100%;"><br>
+                    Pasivo Corriente: <input type="text" id="PasC" style="width: 100%;"><br>
+                    Capital de Trabajo: <input type="text" id="CT" style="width: 100%;"><br>
                     <input type="button" value="CALCULAR" onclick="CapitalTrabajo()">
                 </div>
             </div>
@@ -57,85 +57,52 @@
 
         <div class="contenedor1">
            
-            <h1>Ratios de Liquidez</h1>
+            <h1>Ratios de Eficiencia</h1>
             <div class="contenedor-articulo">
                 <div class="articulo" data-aos="zoom-in-right" >
                     <img src="" alt="">
-                    <h3>Liquidez General</h3>
-                    Activo Corriente: <input type="text" id="Ac"><br>
-                    Pasivo Corriente: <input type="text" id="Pc"><br>
-                    Liquidez General: <input type="text" id="LG"><br>
-                    <input type="button" value="CALCULAR" onclick="LiquidezGeneral()"><br>
+                    <h3>Rotación de Cartera</h3>
+                    Cuentas por Cobrar Promedio: <input type="text" id="CXC" style="width: 100%;"><br>
+                    Pasivo Corriente: <input type="text" id="VT" style="width: 100%;"><br>
+                    Rotación de Cartera: <input type="text" id="RC" style="width: 100%;"><br>
+                    <input type="button" value="CALCULAR" onclick="RotacionCartera()"><br>
                 </div>
 
                 <div class="articulo" data-aos="zoom-in-right">
-                    <img style="height: 230px;" src="img/laboratorio.png" alt="">
-                    <h3 style="margin-left: 40px;"> Prueba Acida</h3>
-                    Activo Corriente: <input type="text" id="AC"><br>
-                    Inventario: <input type="text" id="IN"><br>
-                    Pasivo Corriente: <input type="text" id="PC"><br>
-                    Prueba Ácida: <input type="text" id="PruebaA"><br>
-                    <input type="button" value="CALCULAR" onclick="pruebaAcida()"><br>
+                    <img style="height: 230px;" src="" alt="">
+                    <h3> Rotación de Caja y Bancos</h3>
+                    Caja y Bancos: <input type="text" id="CYV" style="width: 100%;"><br>
+                    Ventas: <input type="text" id="V" style="width: 100%;"><br>
+                    Rotación de Caja y Bancos: <input type="text" id="RCYB" style="width: 100%;"><br>
+                    <input type="button" value="CALCULAR" onclick="RotacionCajaYBancos()"><br>
                 </div>
 
                 <div class="articulo" data-aos="zoom-in-right">
                    <img src="" alt="">
-                    <h3 style="margin-left: 50px;">Capital de Trabajo</h3>
-                    Activo Corriente: <input type="text" id="Atc"><br>
-                    Pasivo Corriente: <input type="text" id="PasC"><br>
-                    Capital de Trabajo: <input type="text" id="CT"><br>
-                    <input type="button" value="CALCULAR" onclick="CapitalTrabajo()">
+                    <h3>Rotación de Activos Totales</h3>
+                    Ventas: <input type="text" id="Vent" style="width: 100%;"><br>
+                    Activos Totales: <input type="text" id="AcT" style="width: 100%;"><br>
+                    Rotación de Activos Totales: <input type="text" id="RAT" style="width: 100%;"><br>
+                    <input type="button" value="CALCULAR" onclick="RotacionActivosTotales()"><br>
                 </div>
+
+                <div class="articulo" data-aos="zoom-in-right">
+                    <img src="" alt="">
+                     <h3>Rotación de Activos Fijos</h3>
+                     Ventas: <input type="text" id="Venta" style="width: 100%;"><br>
+                     Activos Fijos: <input type="text" id="AcF" style="width: 100%;"><br>
+                     Rotación de Activos Fijos: <input type="text" id="RAF" style="width: 100%;"><br>
+                     <input type="button" value="CALCULAR" onclick="RotacionActivosFijos()"><br>
+                 </div>
             </div>
         </div>
 
 
          
     </section>
-    <h1>Ratios de Liquidez</h1>
-        <h2>Liquidez General</h2>
-            Activo Corriente: <input type="text" id="Ac"><br>
-            Pasivo Corriente: <input type="text" id="Pc"><br>
-            Liquidez General: <input type="text" id="LG"><br>
-            <input type="button" value="CALCULAR" onclick="LiquidezGeneral()"><br>
+    
 
-        <h2>Prueba Acida</h2>
-            Activo Corriente: <input type="text" id="AC"><br>
-            Inventario: <input type="text" id="IN"><br>
-            Pasivo Corriente: <input type="text" id="PC"><br>
-            Prueba Ácida: <input type="text" id="PruebaA"><br>
-            <input type="button" value="CALCULAR" onclick="pruebaAcida()"><br>
 
-        <h2>Capital de Trabajo</h2>
-            Activo Corriente: <input type="text" id="Atc"><br>
-            Pasivo Corriente: <input type="text" id="PasC"><br>
-            Capital de Trabajo: <input type="text" id="CT"><br>
-            <input type="button" value="CALCULAR" onclick="CapitalTrabajo()">
-
-    <h1>Ratios de Eficiencia</h1>
-        <h2>Rotación de Cartera</h2>
-            Cuentas por Cobrar Promedio: <input type="text" id="CXC"><br>
-            Pasivo Corriente: <input type="text" id="VT"><br>
-            Rotación de Cartera: <input type="text" id="RC"><br>
-            <input type="button" value="CALCULAR" onclick="RotacionCartera()"><br>
-
-        <h2>Rotación de Caja y Bancos</h2>
-            Caja y Bancos: <input type="text" id="CYV"><br>
-            Ventas: <input type="text" id="V"><br>
-            Rotación de Caja y Bancos: <input type="text" id="RCYB"><br>
-            <input type="button" value="CALCULAR" onclick="RotacionCajaYBancos()"><br>
-
-         <h2>Rotación de Activos Totales</h2>
-            Ventas: <input type="text" id="Vent"><br>
-            Activos Totales: <input type="text" id="AcT"><br>
-            Rotación de Activos Totales: <input type="text" id="RAT"><br>
-            <input type="button" value="CALCULAR" onclick="RotacionActivosTotales()"><br>
-
-         <h2>Rotación de Activos Fijos</h2>
-            Ventas: <input type="text" id="Venta"><br>
-            Activos Fijos: <input type="text" id="AcF"><br>
-            Rotación de Activos Fijos: <input type="text" id="RAF"><br>
-            <input type="button" value="CALCULAR" onclick="RotacionActivosFijos()"><br>
 
     <h1>Ratios de endeudamiento y Solvencia</h1>
         <h2>Ratio de Endeudamiento</h2>
