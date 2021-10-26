@@ -659,3 +659,13 @@ btn-mas:checked ~ .btn-mas .icon-mas2{
         font-size: 0.9em;
         color: #000000;
     }
+
+    /*ratios*/
+    .ratios {
+        background-color: rgba(255, 62, 62, 0.83);
+        padding: 10px 0;
+        color: rgb(218, 181, 181);
+    }
+    .ratios h1{
+        text-align: center;
+    }

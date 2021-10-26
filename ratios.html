@@ -62,8 +62,10 @@
 
     <section class="about-us">
         <div class="contenedor1">
-        
+            <div class="ratios lg-auto">
             <h1>Ratios de Liquidez</h1>
+            </div>
+            
             <div class="contenedor-articulo">
                 <div class="articulo" data-aos="zoom-in-right" >
                     <img src="" alt="">
@@ -96,8 +98,9 @@
         </div>
 
         <div class="contenedor1">
-           
+            <div class="ratios lg-auto">  
             <h1>Ratios de Eficiencia</h1>
+        </div>
             <div class="contenedor-articulo">
                 <div class="articulo" data-aos="zoom-in-right" >
                     <img src="" alt="">
@@ -139,8 +142,11 @@
       </div>
 
       <div class="contenedor1">
+        <div class="ratios lg-auto">
         <h1>Ratios de endeudamiento y Solvencia</h1>
+        </div>
         <div class="contenedor-articulo">
+
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
             <h3>Ratio de Endeudamiento</h3>
@@ -179,46 +185,16 @@
           </div>
         </div>
       </div>
-    </section>
-    
 
-
-
-    <h1>Ratios de endeudamiento y Solvencia</h1>
-    <h2>Ratio de Endeudamiento</h2>
-    Pasivo: <input type="text" id="pas" /><br />
-    Patrimonio Neto: <input type="text" id="paNeto" /><br />
-    Ratio de Endeudamiento: <input type="text" id="RE" /><br />
-    <input
-      type="button"
-      value="CALCULAR"
-      onclick="RatioEndeudamiento()"
-    /><br />
-
-    <h3>En el corto Plazo</h3>
-    <h4>Ratio de Endeudamiento</h4>
-    Pasivo Corriente: <input type="text" id="pasCo" /><br />
-    Patrimonio Neto: <input type="text" id="paneTo" /><br />
-    Ratio de Endeudamiento: <input type="text" id="REC" /><br />
-    <input
-      type="button"
-      value="CALCULAR"
-      onclick="RatioEndeudamientoCortoPlazo()"
-    /><br />
-
-    <h3>En el Largo Plazo</h3>
-    <h4>Ratio de Endeudamiento</h4>
-    Pasivo No Corriente: <input type="text" id="pasNoCo" /><br />
-    Patrimonio Neto: <input type="text" id="paneto" /><br />
-    Ratio de Endeudamiento: <input type="text" id="REL" /><br />
-    <input
-      type="button"
-      value="CALCULAR"
-      onclick="RatioEndeudamientoLargoPlazo()"
-    /><br />
-
-    <h1>Ratios de Rentabilidad</h1>
+<div class="contenedor1">
+    <div class="ratios lg-auto">
+     <h1>Ratios de Rentabilidad</h1>   
+    </div>
+      
+      <div class="contenedor-articulo">
+    <div class="articulo" data-aos="zoom-in-right">
     <h2>Rentabilidad de las Ventas</h2>
+    
     Beneficio Bruto:<input type="text" id="benBruto" /><br />
     Ventas Netas: <input type="text" id="VeNetas" /><br />
     Rentabilidad de las Ventas: <input type="text" id="REV" /><br />
@@ -227,7 +203,11 @@
       value="CALCULAR"
       onclick="RentabilidadVentas()"
     /><br />
+  </div>
+
+  <div class="articulo" data-aos="zoom-in-right">
     <h2>Rentabilidad sobre el Capital Propio</h2>
+    
     Beneficio Neto: <input type="text" id="benNeto" /><br />
     Total Patrimonio: <input type="text" id="totalPat" /><br />
     Rentabilidad sobre el Capital Propio: <input type="text" id="RECT" /><br />
@@ -237,6 +217,9 @@
       onclick="RentabilidadCapitalPropio()"
     /><br />
 
+    </div>
+
+    <div class="articulo" data-aos="zoom-in-right">
     <h2>Rentabilidad sobre Activos</h2>
     Beneficio Neto: <input type="text" id="beneNeto" /><br />
     Total Activo: <input type="text" id="totalAct" /><br />
@@ -246,6 +229,16 @@
       value="CALCULAR"
       onclick="RentabilidadActivos()"
     /><br />
+    </div>
+</div>
+</div>
+
+    
+    </section>
+    
+
+
+    
 
     <script type="text/javascript" src="js/ratio.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
