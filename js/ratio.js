@@ -96,3 +96,25 @@ function RentabilidadActivos(){
     respu = respu.toFixed(2);
     document.getElementById('REA').value=respu+"%";
 }
+
+function CostolCapitalAccionariado(){
+    
+    var num1=Number(document.getElementById('RF').value);
+    var num2=Number(document.getElementById('RM').value);
+    var num3=Number(document.getElementById('B').value);
+    var resultado=num1+(num2-num1)*num3;
+    resultado = resultado.toFixed(2);
+    document.getElementById('CCA').value=resultado;
+}
+
+function CostoPromedioPonderadoCapital(){
+    
+    var num1=Number(document.getElementById('KD').value);
+    var num2=Number(document.getElementById('KE').value);
+    var num3=Number(document.getElementById('D').value);
+    var num4=Number(document.getElementById('P').value);
+    var num5=Number(document.getElementById('T').value);
+    var resultado=(num2*(num4/(num4+num3)))+(num1*(num3/(num4+num3)))*(1-num5);
+    resultado = resultado.toFixed(4);
+    document.getElementById('WACC').value=resultado;
+}
