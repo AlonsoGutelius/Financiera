@@ -118,3 +118,25 @@ function CostoPromedioPonderadoCapital(){
     resultado = resultado.toFixed(4);
     document.getElementById('WACC').value=resultado;
 }
+
+function Desapalancar(){
+    
+    var num1=Number(document.getElementById('B_DA').value);
+    var num2=Number(document.getElementById('B_Dt1').value);
+    var num3=Number(document.getElementById('B_DDeuda').value);
+    var num4=Number(document.getElementById('B_DCapital').value);
+    var resultado=(num1)/(1+((1-num2)*(num3/num4)));
+    resultado = resultado.toFixed(3);
+    document.getElementById('B_DResult').value=resultado;
+}
+
+function Apalancar(){
+    
+    var num1=Number(document.getElementById('B_AD').value);
+    var num2=Number(document.getElementById('B_At2').value);
+    var num3=Number(document.getElementById('B_ADeuda').value);
+    var num4=Number(document.getElementById('B_ACapital').value);
+    var resultado=(1+((1-num2)*(num3/num4)))*num1;
+    resultado = resultado.toFixed(3);
+    document.getElementById('B_AResult').value=resultado;
+}
