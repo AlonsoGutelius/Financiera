@@ -173,7 +173,7 @@
             Ratio de Endeudamiento: <input type="text" id="RE" /><br />
           <br />
           </div>
-
+    
           <div class="articulo" data-aos="zoom-in-right">
             <img style="height: 230px" src="img/laboratorio.png" alt="" />
             <h3 >En el corto Plazo</h3>
@@ -188,7 +188,11 @@
             Ratio de Endeudamiento: <input type="text" id="REC" /><br />
             <br />
           </div>
-
+      </div>
+    
+      <div class="contenedor1">
+        <h1>Ratios de Rentabilidad</h1>
+        <div class="contenedor-articulo">
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
             <h3 >En el Largo Plazo</h3>
@@ -199,6 +203,54 @@
             Ratio de Endeudamiento: <input type="text" id="REL" /><br />
             
           </div>
+    
+          <div class="articulo" data-aos="zoom-in-right">
+            <img src="" alt="" />
+            <h3>Rentabilidad sobre Activos</h3>
+            Beneficio Neto: <input type="text" id="beneNeto" /><br />
+            Total Activo: <input type="text" id="totalAct" /><br /><br>
+            <input
+              type="button"
+              value="CALCULAR"
+              onclick="RentabilidadActivos()"
+            /><br />
+            Rentabilidad sobre Activos: <input type="text" id="REA" /><br />
+          </div>
+        </div>
+        
+      <div class="contenedor1" id="lBeta">
+        <h1>Beta desapalancada y apalancada</h1>
+        <div class="contenedor-articulo">
+          <div class="articulo" data-aos="zoom-in-right">
+            <img src="" alt="" />
+            <h3>Desapalancar Beta</h3>
+            Beta Apalancado: <input type="text" id="B_DA" /><br />
+            Tasa de Impuestos: <input type="text" id="B_Dt1" /><br />
+            Deuda: <input type="text" id="B_DDeuda" /><br />
+            Capital: <input type="text" id="B_DCapital" /><br /><br>
+            <input
+              type="button"
+              value="CALCULAR"
+              onclick="Desapalancar()"
+            /><br />
+            Beta Desapalancado: <input type="text" id="B_DResult" /><br />
+          </div>
+
+          <div class="articulo" data-aos="zoom-in-right">
+            <img style="height: 230px" src="img/laboratorio.png" alt="" />
+            <h3>Apalancar Beta</h3>
+            Beta Desapalancado: <input type="text" id="B_AD" /><br />
+            Tasa de Impuestos: <input type="text" id="B_At2" /><br />
+            Deuda: <input type="text" id="B_ADeuda" /><br />
+            Capital: <input type="text" id="B_ACapital" /><br /><br>
+            <input
+              type="button"
+              value="CALCULAR"
+              onclick="Apalancar()"
+            /><br />
+            Beta Apalancado: <input type="text" id="B_AResult" /><br />
+          </div>
+
         </div>
       </div>
 
