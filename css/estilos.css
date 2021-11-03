@@ -1,4 +1,4 @@
-
+ 
 
 
 body {
@@ -51,19 +51,28 @@ nav {
     background: #fff;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
-    position: fixed;
+    position: static;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     transition: ease-in-out 0.5s;
 }
 
 .nav {
-    display: flex;
+    
     justify-content: space-between;
     height: 80px;
     width: 100%;
     align-items: center;
     padding: 0 40px;
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    
+
 }
 
 .nav .logo {
@@ -186,9 +195,9 @@ nav {
 .articulo {
     width: 29%;
     background: rgb(241, 170, 170);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: 10px;
-    padding: 45px 30px 60px 30px;
+    padding: 10px 30px 60px 30px;
     transition: all .5s;
     cursor: pointer;
 }
@@ -669,3 +678,18 @@ btn-mas:checked ~ .btn-mas .icon-mas2{
     .ratios h1{
         text-align: center;
     }
+
+
+    /*footer*/
+
+    footer {
+        background: rgb(136, 136, 136);
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: auto;
+        padding: 30px 0px;
+    }
+
+
