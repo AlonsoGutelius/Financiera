@@ -9,9 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
+  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="img/logofia.png" alt="" width="350px"></a>
@@ -20,10 +24,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#lRatios">Ratios</a>
-              <a class="nav-link" href="#lBeta">Betas</a>
-              <a class="nav-link" href="#lCamp">CAMP</a> 
-              <a class="nav-link" href="#lWacc">WACC</a> 
+              <a class="nav-link active" aria-current="page" href="#lRatios"style="font-size:30px;">Ratios</a>
+              <a class="nav-link active" href="#lBeta" style="font-size:30px;">Betas</a>
+              <a class="nav-link active" href="#lCamp" style="font-size:30px;">CAMP</a> 
+              <a class="nav-link active" href="#lWacc" style="font-size:30px;">WACC</a> 
             </div>
           </div>
         </div>
@@ -39,7 +43,7 @@
 <!--Bienvenidos-->
     <section class="section-1">
       <div class="contenedor1 text-center">
-        <h1>Trabajo final de Gestion financiera-GRUPO B</h1>
+        <h1>Trabajo final de Gestion financiera - Sistemas GRUPO B</h1>
         <br />
         <div class="row">
           <div class="col-md-6 col-12">
@@ -51,7 +55,7 @@
             <div class="panel text-left">
               <p>
                 El objetivo de la pagina es mostrar de una forma sencilla el
-                calculo de las operaciones tratadas durante las clases teoricas
+                cálculo de las operaciones tratadas durante las clases teoricas
                 y practicas,todo ello fue elaborado por el grupo B , conformado
                 por los integrantes: Fabio Marroquin leon, Giancarlo jose
                 fernandez zaga,Alonso Miguel Gutelius Morales,Giannina yerimar
@@ -68,18 +72,18 @@
     <section class="about-us">
         <div class="contenedor1" id="lRatios">
            
-            <div class="contenedor-articulo">
-                <img src="img/images.jpg" alt="">
-                
-            </div>
+          <div class="ratios lg-auto">
             <h1>Ratios de Liquidez</h1>
+            </div>
+           
+
             <div class="contenedor-articulo">
                 <div class="articulo" data-aos="zoom-in-right" >
                     <img src="" alt="">
                     <h3>Liquidez General</h3>
                     Activo Corriente: <input type="text" id="Ac" style="width: 100%;"><br>
                     Pasivo Corriente: <input type="text" id="Pc" style="width: 100%;"><br><br>
-                    <input type="button" value="CALCULAR" onclick="LiquidezGeneral()"><br>
+                    <input type="button" value="CALCULAR" onclick="LiquidezGeneral()" class="btn btn-dark btn-sm"><br>
                     Liquidez General: <input type="text" id="LG" style="width: 100%;"><br>   
                 </div>
 
@@ -89,7 +93,7 @@
                     Activo Corriente: <input type="text" id="AC" style="width: 100%;"><br>
                     Inventario: <input type="text" id="IN" style="width: 100%;"><br>
                     Pasivo Corriente: <input type="text" id="PC" style="width: 100%;"><br><br>
-                    <input type="button" value="CALCULAR" onclick="pruebaAcida()"><br>
+                    <input type="button" value="CALCULAR" onclick="pruebaAcida()" class="btn btn-dark btn-sm"><br>
                     Prueba Ácida: <input type="text" id="PruebaA" style="width: 100%;"><br>
                     </div>
 
@@ -98,7 +102,7 @@
                     <h3>Capital de Trabajo</h3>
                     Activo Corriente: <input type="text" id="Atc" style="width: 100%;"><br>
                     Pasivo Corriente: <input type="text" id="PasC" style="width: 100%;"><br><br>
-                    <input type="button" value="CALCULAR" onclick="CapitalTrabajo()"><br>
+                    <input type="button" value="CALCULAR" onclick="CapitalTrabajo()" class="btn btn-dark btn-sm"><br>
                     Capital de Trabajo: <input type="text" id="CT" style="width: 100%;"><br>                    
                 </div>
             </div>
@@ -106,14 +110,16 @@
 
         <div class="contenedor1">
            
+          <div class="ratios lg-auto">  
             <h1>Ratios de Eficiencia</h1>
+        </div>
             <div class="contenedor-articulo">
                 <div class="articulo" data-aos="zoom-in-right" >
                     <img src="" alt="">
                     <h3>Rotación de Cartera</h3>
                     Cuentas por Cobrar Promedio: <input type="text" id="CXC" style="width: 100%;"><br>
                     Pasivo Corriente: <input type="text" id="VT" style="width: 100%;"><br><br>
-                    <input type="button" value="CALCULAR" onclick="RotacionCartera()"><br>
+                    <input type="button" value="CALCULAR" onclick="RotacionCartera()" class="btn btn-dark btn-sm"><br>
                     Rotación de Cartera: <input type="text" id="RC" style="width: 100%;"><br>
                 </div>
 
@@ -122,7 +128,7 @@
                     <h3> Rotación de Caja y Bancos</h3>
                     Caja y Bancos: <input type="text" id="CYV" style="width: 100%;"><br>
                     Ventas: <input type="text" id="V" style="width: 100%;"><br><br>
-                    <input type="button" value="CALCULAR" onclick="RotacionCajaYBancos()"><br>
+                    <input type="button" value="CALCULAR" onclick="RotacionCajaYBancos()" class="btn btn-dark btn-sm"><br>
                     Rotación de Caja y Bancos: <input type="text" id="RCYB" style="width: 100%;"><br>
                     </div>
 
@@ -131,7 +137,7 @@
                     <h3>Rotación de Activos Totales</h3>
                     Ventas: <input type="text" id="Vent" style="width: 100%;"><br>
                     Activos Totales: <input type="text" id="AcT" style="width: 100%;"><br><br>
-                    <input type="button" value="CALCULAR" onclick="RotacionActivosTotales()"><br>
+                    <input type="button" value="CALCULAR" onclick="RotacionActivosTotales()" class="btn btn-dark btn-sm"><br>
                     Rotación de Activos Totales: <input type="text" id="RAT" style="width: 100%;"><br>
                 </div>
 
@@ -140,7 +146,7 @@
                      <h3>Rotación de Activos Fijos</h3>
                      Ventas: <input type="text" id="Venta" style="width: 100%;"><br>
                      Activos Fijos: <input type="text" id="AcF" style="width: 100%;"><br><br>
-                     <input type="button" value="CALCULAR" onclick="RotacionActivosFijos()"><br>
+                     <input type="button" value="CALCULAR" onclick="RotacionActivosFijos()" class="btn btn-dark btn-sm"><br>
                      Rotación de Activos Fijos: <input type="text" id="RAF" style="width: 100%;"><br>
                  </div>
             </div>
@@ -148,7 +154,9 @@
       </div>
 
       <div class="contenedor1">
-        <h1>Ratios de endeudamiento y Solvencia</h1>
+        <div class="ratios lg-auto">
+          <h1>Ratios de endeudamiento y Solvencia</h1>
+          </div>
         <div class="contenedor-articulo">
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
@@ -158,7 +166,7 @@
             <input
             type="button"
             value="CALCULAR"
-            onclick="RatioEndeudamiento()"
+            onclick="RatioEndeudamiento()" class="btn btn-dark btn-sm"
           /><br />
           Ratio de Endeudamiento: <input type="text" id="RE" /><br />
           </div>
@@ -171,7 +179,7 @@
             <input
               type="button"
               value="CALCULAR"
-              onclick="RatioEndeudamientoCortoPlazo()"
+              onclick="RatioEndeudamientoCortoPlazo()" class="btn btn-dark btn-sm"
             /><br />
             Ratio de Endeudamiento: <input type="text" id="REC" /><br />
           </div>
@@ -184,14 +192,16 @@
             <input
               type="button"
               value="CALCULAR"
-              onclick="RatioEndeudamientoLargoPlazo()"
+              onclick="RatioEndeudamientoLargoPlazo()" class="btn btn-dark btn-sm"
             /><br />
             Ratio de Endeudamiento: <input type="text" id="REL" /><br />
           </div>
       </div>
     
       <div class="contenedor1">
-        <h1>Ratios de Rentabilidad</h1>
+        <div class="ratios lg-auto">
+          <h1>Ratios de rentabilidad</h1>
+          </div>
         <div class="contenedor-articulo">
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
@@ -201,7 +211,7 @@
             <input
               type="button"
               value="CALCULAR"
-              onclick="RentabilidadVentas()"
+              onclick="RentabilidadVentas()" class="btn btn-dark btn-sm"
             /><br />
             Rentabilidad de las Ventas: <input type="text" id="REV" /><br />
           </div>
@@ -214,7 +224,7 @@
             <input
               type="button"
               value="CALCULAR"
-              onclick="RentabilidadCapitalPropio()"
+              onclick="RentabilidadCapitalPropio()" class="btn btn-dark btn-sm"
             /><br />
             Rentabilidad sobre el Capital Propio: <input type="text" id="RECT" /><br />
           </div>
@@ -227,14 +237,17 @@
             <input
               type="button"
               value="CALCULAR"
-              onclick="RentabilidadActivos()"
+              onclick="RentabilidadActivos()" class="btn btn-dark btn-sm"
             /><br />
             Rentabilidad sobre Activos: <input type="text" id="REA" /><br />
           </div>
         </div>
         
       <div class="contenedor1" id="lBeta">
-        <h1>Beta desapalancada y apalancada</h1>
+        <div class="ratios lg-auto">
+           <h1>Beta desapalancada y apalancada</h1>
+          </div>
+      
         <div class="contenedor-articulo">
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
@@ -246,7 +259,7 @@
             <input
               type="button"
               value="CALCULAR"
-              onclick="Desapalancar()"
+              onclick="Desapalancar()" class="btn btn-dark btn-sm"
             /><br />
             Beta Desapalancado: <input type="text" id="B_DResult" /><br />
           </div>
@@ -261,7 +274,7 @@
             <input
               type="button"
               value="CALCULAR"
-              onclick="Apalancar()"
+              onclick="Apalancar()" class="btn btn-dark btn-sm"
             /><br />
             Beta Apalancado: <input type="text" id="B_AResult" /><br />
           </div>
@@ -271,7 +284,9 @@
     </section>
     
     <div class="contenedor1" id="lCamp">
-      <h1>CAMP</h1>
+      <div class="ratios lg-auto">
+        <h1>CAMP</h1>
+        </div>
       <div class="contenedor-articulo">
           <div class="articulo" data-aos="zoom-in-right">
               <img src="" alt="" />
@@ -279,28 +294,41 @@
               Tasa Libre de Riesgo: <input type="text" id="RF" /><br />
               Rendimiento Esperado: <input type="text" id="RM" /><br />
               Beta de la Accion: <input type="text" id="B" /><br /><br>
-              <input type="button" value="CALCULAR" onclick="CostolCapitalAccionariado()"/><br />
+              <input type="button" value="CALCULAR" onclick="CostolCapitalAccionariado()" class="btn btn-dark btn-sm"/><br />
               Costo Capital Accionariado: <input type="text" id="CCA" /><br />
             </div>
       </div>
   </div>
 
   <div class="contenedor1" id="lWacc">
+    <div class="ratios lg-auto">
       <h1>WACC</h1>
+      </div>
       <div class="contenedor-articulo">
           <div class="articulo" data-aos="zoom-in-right">
               <img src="" alt="" />
               <h3>Costo Promedio Ponderado de Capital</h3>
-              Costo de Deuda: <input type="text" id="KD" /><br />
-              Costo de Capital: <input type="text" id="KE" /><br />
-              Deuda: <input type="text" id="D" /><br />
+              Costo de Deuda: <input type="text" id="KD" /><br/>
+              Costo de Capital: <input type="text" id="KE" /><br/>
+              Deuda :   <br>        <input type="text" id="D" /><br />
               Patrimonio: <input type="text" id="P" /><br />
               Nivel Impositivo: <input type="text" id="T" /><br /><br>
-              <input type="button" value="CALCULAR" onclick="CostoPromedioPonderadoCapital()"/><br />
+              <input type="button" value="CALCULAR" onclick="CostoPromedioPonderadoCapital()" class="btn btn-dark btn-sm"/><br />
               Costo Promedio Ponderado de Capital: <input type="text" id="WACC" /><br />
             </div>
       </div>
   </div>
+
+
+  <footer class="text-center text-white  ">
+
+    
+    <div class="text-center p-1" >
+      Gestion financiera
+      <a class="text-white" >/ Sistemas- Grupo B</a>
+    </div>
+   
+  </footer>
 
   
     <script type="text/javascript" src="js/functions.js"></script>
