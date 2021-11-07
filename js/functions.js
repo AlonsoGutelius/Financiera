@@ -140,3 +140,23 @@ function Apalancar(){
     resultado = resultado.toFixed(3);
     document.getElementById('B_AResult').value=resultado;
 }
+
+
+
+
+function roic(){
+    
+    
+        var num1=Number(document.getElementById('Ebit').value);
+        var num2=Number(document.getElementById('tasa').value);
+        var num2=num2/100;
+        var num3=Number(document.getElementById('capPro').value);
+        var num4=Number(document.getElementById('deuFi').value);
+   
+        var resultado=
+        resultado = resultado.toFixed(2);
+        document.getElementById('ROIC').value=resultado;
+    
+
+
+}
