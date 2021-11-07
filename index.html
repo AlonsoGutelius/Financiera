@@ -37,7 +37,7 @@
             <a class="nav-link active" aria-current="page" href="#lBeta" style="font-size:30px; color: black;">Betas</a> 
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#lCamp" style="font-size:30px;"  >CAMP</a>
+            <a class="nav-link" href="#lCamp" style="font-size:30px;color: black;"  >CAMP</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#lWacc" style="font-size:30px; color: black;" >WACC</a>
@@ -50,7 +50,7 @@
               <li><a class="dropdown-item" href="#liquidez">Ratios de liquidez</a></li>
               <li><a class="dropdown-item" href="#eficiencia">Ratios de eficiencia</a></li>
               <li><a class="dropdown-item" href="#endeusolven">Ratios de Endeudamiento y solvencia</a></li>
-              <li><a class="dropdown-item" href="#rentabilidad">Ratios de Rentabilidad</a></li>
+              <li><a class="dropdown-item" href="#rentabilidad">Ratios de Rentabilidad o rendimiento</a></li>
               
             </ul>
           </li>
@@ -64,15 +64,17 @@
     <section class="section-1">
       <div class="contenedor1 text-center">
         <h1>Trabajo final de Gestion financiera - Sistemas GRUPO B</h1>
+        <h1>Docente: Mg. Gustavo Bustamante Jurado </h1>
+        <h1>Ciclo Academico: 2021-2 </h1>
         <br />
         <div class="row">
           <div class="col-md-6 col-12">
-            <div class="imagen">
-              <img src="img/course_2.jpg" alt="equipo" class="" />
+            <div class="imagen lg-auto">
+              <img src="img/course_2.jpg" style="min-width: 20%; height:100%" alt="equipo" class="" />
             </div>
           </div>
           <div class="col-md-6 col-8">
-            <div class="panel text-left">
+            <div class="panel lg-auto">
               <p>
                 El objetivo de la pagina es mostrar de una forma sencilla el
                 cálculo de las operaciones tratadas durante las clases teoricas
@@ -238,7 +240,7 @@
     
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
-            <h3>Rentabilidad sobre el Capital Propio</h3>
+            <h3>Rentabilidad sobre el Capital Propio(ROE)</h3>
             Beneficio Neto: <input type="text" id="benNeto" /><br />
             Total Patrimonio: <input type="text" id="totalPat" /><br /><br>
             <input
@@ -251,7 +253,7 @@
     
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
-            <h3>Rentabilidad sobre Activos</h3>
+            <h3>Rentabilidad sobre Activos(ROA)</h3>
             Beneficio Neto: <input type="text" id="beneNeto" /><br />
             Total Activo: <input type="text" id="totalAct" /><br /><br>
             <input
@@ -268,14 +270,18 @@
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
             <h3>ROIC</h3>
-            NOPAT:<input type="text" id="roic" /><br />
-            Capital invertido: <input type="text" id="VeNetas" /><br /><br>
-            <input
+            Ebit:<br><input type="text" id="Ebit" /><br />
+            T:<br> <input type="text" id="tasa" /><br />
+            capital propio: <br><input type="text" id="capPro" /><br /><br>
+            deuda financiera (LP Y CP):<br><input type="text" id="deuFi" /><br />
+
+
+            <br><input
               type="button"
-              value="CALCULAR"
-              onclick="RentabilidadVentas()" class="btn btn-dark btn-sm"
+            value="CALCULAR"
+              onclick="roic()" class="btn btn-dark btn-sm"
             /><br />
-           ROIC:<br><input type="text" id="REV" /><br />
+           ROIC:<br><input type="text" id="ROIC" /><br />
           </div>
         </div>
         

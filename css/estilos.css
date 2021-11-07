@@ -1,10 +1,16 @@
 .contenedor1 .contenedor-articulo .articulo input{
-    border-radius: 15px;
+    border-radius: 10px;
   }    
 
 
-  .contenedor1 .contenedor-articulo .articulo .input button{
+  .contenedor1 .contenedor-articulo .articulo input .button{
       position: center;
+      
+      
+  }
+
+  .btn{
+      padding: 10px 50px 30px 0;
   }
 
 ul, li {
@@ -234,7 +240,7 @@ nav {
 
 .articulo {
     width: 29%;
-    background: rgb(241, 170, 170);
+    background: rgb(245, 219, 219);
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 45px 30px 60px 30px;
@@ -244,7 +250,7 @@ nav {
 
 .articulo:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
-    background: #DC143C;
+    background: #e64d4d;
     transition: all .5s;   
 }
 
@@ -670,14 +676,14 @@ btn-mas:checked ~ .btn-mas .icon-mas2{
 
      /* Bienvenidos*/
      .section-1 {
-        padding: 5vmin 0vmin;
+        padding: 1vmin 0vmin;
    
        overflow: hidden;
        width: 90%;
        max-width: 1000px;
        margin: auto;
        overflow: hidden;
-       padding: 60px 0;
+       padding: 10px 0;
     }
     .section-1 .row .col-md-6 .imagen img {
         opacity: 1;
@@ -691,17 +697,18 @@ btn-mas:checked ~ .btn-mas .icon-mas2{
         position: absolute;
         top: 4vmin;
         left: -7vmin;
-        bottom: 4vmin;
+        bottom: 6vmin;
         background: #e8a0a0;
         border-radius: 3px;
         text-align: left;
         padding: 10vmin 5vmin 20vmin 10vmin;
         box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        width: 100%;
     }
     .section-1 .row .col-md-6 .panel p {
         font-weight: bolder;
-        font-size: 0.9em;
+        font-size: 1.1em;
         color: #000000;
         
     }

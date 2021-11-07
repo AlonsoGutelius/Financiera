@@ -153,9 +153,9 @@ function roic(){
         var num3=Number(document.getElementById('capPro').value);
         var num4=Number(document.getElementById('deuFi').value);
    
-        var resultado=
+        var resultado=(((num1*(1-num2))/(num3+num4))*100);
         resultado = resultado.toFixed(2);
-        document.getElementById('ROIC').value=resultado;
+        document.getElementById('ROIC').value=resultado+"%";
     
 
 
