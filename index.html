@@ -117,6 +117,14 @@
                     <input type="button" value="CALCULAR" onclick="LiquidezGeneral()" class="btn btn-dark btn-sm"><br>
                     Liquidez General: <input type="text" id="LG" style="width: 100%;"><br>   
                 </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                  <img src="" alt="">
+                   <h3>índice de Liquidez</h3>
+                   Activo Disponible: <input type="text" id="ActivoDis" style="width: 100%;"><br>
+                   Pasivo Corriente: <input type="text" id="PasivoCorr" style="width: 100%;"><br><br>
+                   <input type="button" value="CALCULAR" onclick="IndiceLiquidez()" class="btn btn-dark btn-sm"><br>
+                   índice de Liquidez: <input type="text" id="IL" style="width: 100%;"><br>                    
+               </div>
 
                 <div class="articulo" data-aos="zoom-in-right">
                     <img  src="" alt="">
@@ -136,6 +144,7 @@
                     <input type="button" value="CALCULAR" onclick="CapitalTrabajo()" class="btn btn-dark btn-sm"><br>
                     Capital de Trabajo: <input type="text" id="CT" style="width: 100%;"><br>                    
                 </div>
+                
             </div>
         </div>
 
@@ -199,7 +208,7 @@
             value="CALCULAR"
             onclick="RatioEndeudamiento()" class="btn btn-dark btn-sm"
           /><br />
-          Ratio de Endeudamiento: <input type="text" id="RE" /><br />
+          Ratio de Endeudamiento: <input type="text" id="RAE" /><br />
           </div>
     
           <div class="articulo" data-aos="zoom-in-right">
@@ -234,17 +243,19 @@
           <h1>Ratios de rentabilidad</h1>
           </div>
         <div class="contenedor-articulo">
+
           <div class="articulo" data-aos="zoom-in-right">
             <img src="" alt="" />
             <h3>Rentabilidad de las Ventas</h3>
             Beneficio Bruto:<input type="text" id="benBruto" /><br />
-            Ventas Netas: <input type="text" id="VeNetas" /><br /><br>
+            Ventas Netas: <input type="text" id="ventasNetasR" /><br /><br>
             <input
               type="button"
               value="CALCULAR"
-              onclick="RentabilidadVentas()" class="btn btn-dark btn-sm"
-            /><br />
-            Rentabilidad de las Ventas: <input type="text" id="REV" /><br />
+              onclick="RentabilidadVentas()" class="btn btn-dark btn-sm"/>
+            
+            <br />
+            Rentabilidad de las Ventas: <input type="text" id="RENV" /><br />
           </div>
     
           <div class="articulo" data-aos="zoom-in-right">
